@@ -1,3 +1,67 @@
+WHY
+===
+
+Disclaimer
+----------
+I am NOT a phython developer. I just changed what was necessary to make it work. This repository can be used directly or be an inspiration to others to enable Gitlab SSO with Sentry 10. These files can be installed from local folder only as no updated package is available in pip repository.
+
+Main problem
+------------
+Django has been updated in Sentry 10 and previous scripts won't work.
+
+Install
+-------
+
+Create **plugins** folder **next to your Dockerfile** of on-premise Sentry folder.
+
+Download or clone this repository and put it inside `plugins` folder (I am using `plugins/sentry-auth-gitlab-0.1.0`).
+
+So for example file
+
+.. code-block:: bash
+
+    __init__.py
+    
+will be at 
+ 
+.. code-block:: bash
+
+    onpremise-sentry-root-folder/sentry/plugins/sentry-auth-gitlab-0.1.0/auth_gitlab/__init__.py
+
+Change Sentry `Dockerfile` to copy `plugins` folder to docker. Line
+
+.. code-block:: dockerfile
+
+    COPY . /usr/src/sentry
+    
+change to 
+
+.. code-block:: dockerfile
+
+  COPY . /usr/src/sentry
+  COPY plugins /usr/src/sentry/plugins
+  
+  
+Add package to requirements.txt file
+ 
+.. code-block:: txt
+
+    # Add plugins here
+    /usr/src/sentry/plugins/sentry-auth-gitlab-0.1.0
+  
+Setup Gitlab Auth for Sentry as mentioned in original documentation bellow
+
+Stop, rebuild and restart your Sentry docker containers to accept new configuration and plugins
+
+.. code-block:: bash
+
+  docker-compose down
+  docker-compose build
+  docker-compose up -d
+
+
+It **should** work.
+
 GitLab Auth for Sentry
 ======================
 v0.1.0
