@@ -1,13 +1,15 @@
-WHY
-===
 
 Disclaimer
-----------
+=========
 I am NOT a phython developer. I just changed what was necessary to make it work. This repository can be used directly or be an inspiration to others to enable Gitlab SSO with Sentry 10. These files can be installed from local folder only as no updated package is available in pip repository.
+
+How to
+======
 
 Main problem
 ------------
-Django has been updated in Sentry 10 and previous scripts won't work.
+
+Django has been updated in Sentry 10 and previous scripts don't work anymore.
 
 Install
 -------
