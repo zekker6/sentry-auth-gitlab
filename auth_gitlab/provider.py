@@ -11,7 +11,7 @@ from .views import FetchUser
 
 
 class GitLabOAuth2Provider(OAuth2Provider):
-    name = 'GitLab'
+    name = 'Gitlab'
 
     def get_auth_pipeline(self):
         return [

@@ -5,6 +5,7 @@ sentry-auth-gitlab
 
 :copyright: (c) 2015 Functional Software, Inc
 """
+from __future__ import absolute_import
 from setuptools import setup, find_packages
 
 
@@ -34,7 +35,7 @@ setup(
     include_package_data=True,
     entry_points={
         'sentry.apps': [
-            'auth_gitlab = sentry_auth_gitlab',
+            'auth_gitlab = auth_gitlab.apps.Config',
          ],
     },
     classifiers=[
