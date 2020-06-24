@@ -4,3 +4,5 @@
 /build
 .cache
 .ropeproject
+*.egg-info
+.vscode

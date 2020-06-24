@@ -7,7 +7,7 @@ sentry-auth-gitlab-v2
 """
 from __future__ import absolute_import
 from setuptools import setup, find_packages
-import pathlib
+import os
 
 tests_require = [
     'pytest',
@@ -19,14 +19,16 @@ install_requires = [
 ]
 
 # The directory containing this file
-HERE = pathlib.Path(__file__).parent
+
+HERE = os.path.dirname(os.path.realpath(__file__))
 
 # The text of the README file
-README = (HERE / "README.rst").read_text()
+with open(HERE + "/README.rst", 'r') as f:
+    README = f.read()
 
 setup(
     name='sentry-auth-gitlab-v2',
-    version='0.2.2',
+    version='0.2.4',
     author='Zakhar Bessarab',
     author_email='zekker6@gmail.com',
     url='https://github.com/zekker6',
