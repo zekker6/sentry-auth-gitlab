@@ -26,7 +26,7 @@ class GitLabOAuth2Provider(OAuth2Provider):
     def get_refresh_token_url(self):
         return ACCESS_TOKEN_URL
 
-    def build_config(self, config):
+    def build_config(self, state):
         return {}
 
     def build_identity(self, state):
