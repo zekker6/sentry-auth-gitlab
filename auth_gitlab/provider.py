@@ -38,3 +38,9 @@ class GitLabOAuth2Provider(OAuth2Provider):
             'name': user_data['name'],
             'data': self.get_oauth_data(data),
         }
+
+    def get_client_id():
+        return CLIENT_ID
+
+    def get_client_secret():
+        return CLIENT_SECRET
