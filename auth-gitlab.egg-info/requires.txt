@@ -1,5 +1,0 @@
-sentry
-
-[tests]
-pytest
-mock

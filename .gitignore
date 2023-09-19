@@ -6,3 +6,5 @@
 .ropeproject
 *.egg-info
 .vscode
+venv
+.idea
