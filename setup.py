@@ -28,7 +28,7 @@ with open(HERE + "/README.rst", 'r') as f:
 
 setup(
     name='sentry-auth-gitlab-v2',
-    version='0.4.0',
+    version='0.4.1',
     author='Zakhar Bessarab',
     author_email='zekker6@gmail.com',
     url='https://github.com/zekker6/sentry-auth-gitlab',
