@@ -23,7 +23,7 @@ install_requires = [
 HERE = os.path.dirname(os.path.realpath(__file__))
 
 # The text of the README file
-with open(HERE + "/README.rst", 'r') as f:
+with open(HERE + "/README.md", 'r') as f:
     README = f.read()
 
 setup(
