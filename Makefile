@@ -1,4 +1,8 @@
-.PHONY: dist
+.PHONY: dist venv
+
+venv:
+	python3 -m venv venv
+	. venv/bin/activate && pip install setuptools wheel twine
 
 dist:
 	mkdir -p dist
