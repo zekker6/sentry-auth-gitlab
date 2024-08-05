@@ -68,6 +68,7 @@ Optionally you may also specify the api version, scheme, and scope:
 
 ```python
 GITLAB_API_VERSION = 4
+GITLAB_HTTP_SCHEME = "https"
 GITLAB_AUTH_SCOPE = "api"
 ```
 
