@@ -47,7 +47,7 @@ pip install /usr/src/sentry/plugins/sentry-auth-gitlab
 ### Gitlab configuration
 
 Tested with an official [sentry/self-hosted](https://github.com/getsentry/self-hosted) installation:
-- Sentry 24.1.0
+- Sentry 25.3.0
 - Gitlab 17.1
 
 Create a new application under your GitLab.

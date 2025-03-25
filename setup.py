@@ -28,9 +28,9 @@ with open(HERE + "/README.md", 'r') as f:
 
 setup(
     name='sentry-auth-gitlab-v2',
-    version='0.4.3',
+    version='0.4.4',
     author='Zakhar Bessarab',
-    author_email='zekker6@gmail.com',
+    author_email='me@zekker.dev',
     url='https://github.com/zekker6/sentry-auth-gitlab',
     description='Gitlab authentication provider for Sentry',
     long_description=README,
