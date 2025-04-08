@@ -8,4 +8,9 @@ class Config(AppConfig):
 
         from .provider import GitLabOAuth2Provider
 
-        register(GitLabOAuth2Provider)
+        try:
+            # Sentry 25.3.0 and above
+            register(GitLabOAuth2Provider)
+        except TypeError:
+            # Sentry 25.2.0 and below
+            register('auth_gitlab', GitLabOAuth2Provider)
