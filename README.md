@@ -1,8 +1,8 @@
 [![PyPI version](https://badge.fury.io/py/sentry-auth-gitlab-v2.svg)](https://badge.fury.io/py/sentry-auth-gitlab-v2)
 
 ## Disclaimer 1
-Thats a second level for of this library. This fork was made in order to prepare PyPi package and make installation process easier via supported plugins install flow.
-Original fork disclamer is below.
+That's a second level for of this library. This fork was made in order to prepare PyPi package and make installation process easier via supported plugins install flow.
+[Original fork](https://github.com/cirmaciu/sentry-auth-gitlab) disclaimer is below.
 
 ## Disclaimer 2
 I am NOT a python developer. I just changed what was necessary to make it work. This repository can be used directly or be an inspiration to others to enable Gitlab SSO with Sentry 10. These files can be installed from local folder only as no updated package is available in pip repository.
