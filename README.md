@@ -7,6 +7,15 @@ That's a second level for of this library. This fork was made in order to prepar
 ## Disclaimer 2
 I am NOT a python developer. I just changed what was necessary to make it work. This repository can be used directly or be an inspiration to others to enable Gitlab SSO with Sentry 10. These files can be installed from local folder only as no updated package is available in pip repository.
 
+## Compatibility
+
+The following table shows which version of this plugin is compatible with which version of Sentry:
+
+| Plugin version | Sentry version         |
+|----------------|------------------------|
+| 0.4.5          | versions prior to 25.6 |
+| 0.5.0          | 25.6 and above         |
+
 ## How to install
 
 ### Install via `pip`
