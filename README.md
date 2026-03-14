@@ -79,6 +79,7 @@ Optionally you may also specify the api version, scheme, and scope:
 GITLAB_API_VERSION = 4
 GITLAB_HTTP_SCHEME = "https"
 GITLAB_AUTH_SCOPE = "api"
+GITLAB_AUTH_GROUPS = ["my-group", "another-group"]  # restrict login to members of these groups
 ```
 
 ### Notice

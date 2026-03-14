@@ -4,6 +4,7 @@ CLIENT_ID = settings.GITLAB_APP_ID
 CLIENT_SECRET = settings.GITLAB_APP_SECRET
 
 SCOPE = getattr(settings, 'GITLAB_AUTH_SCOPE', 'api')
+GROUPS = getattr(settings, 'GITLAB_AUTH_GROUPS', [])
 
 BASE_DOMAIN = settings.GITLAB_BASE_DOMAIN
 BASE_SCHEME = getattr(settings, 'GITLAB_HTTP_SCHEME', 'https')
