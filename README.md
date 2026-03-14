@@ -13,8 +13,8 @@ The following table shows which version of this plugin is compatible with which 
 
 | Plugin version                                                        | Sentry version         |
 |-----------------------------------------------------------------------|------------------------|
+| [0.5.0 (and newer)](https://pypi.org/project/sentry-auth-gitlab-v2/) | 25.6 and above         |
 | [0.4.5](https://pypi.org/project/sentry-auth-gitlab-v2/0.4.5/)        | versions prior to 25.6 |
-| [0.5.0 (the latest)](https://pypi.org/project/sentry-auth-gitlab-v2/) | 25.6 and above         |
 
 ## How to install
 
